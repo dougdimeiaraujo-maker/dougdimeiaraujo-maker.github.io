@@ -1,376 +1,121 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-  <meta name="google-site-verification" content="ykJmxxnP4eYMFRZ1sEFONOjgFGeyBMsLgP5CvbdZlZQ" />
 <meta charset="UTF-8">
-<meta name="google-site-verification" content="H8cRwHw4Z9e_Oog4mbc_8QbN7qFNiRw57Ffu38QEwR4">
 <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+
 <title>Criação de Sites com IA em Bady Bassitt e Rio Preto | BORUS IA</title>
 <meta name="description" content="Criação de sites premium com Inteligência Artificial em Bady Bassitt e São José do Rio Preto. Sites rápidos, otimizados para Google e feitos para gerar clientes.">
-<meta name="keywords" content="criação de sites com inteligência artificial, websites premium, landing pages, automação com ia, chatbots inteligentes, seo avançado, desenvolvimento web">
 <meta name="robots" content="index, follow, max-image-preview:large">
 <meta name="author" content="BORUS IA">
 <meta name="theme-color" content="#090909">
 <meta name="referrer" content="strict-origin-when-cross-origin">
+
+<!-- ESSENCIAL: diz ao Google qual e a URL oficial desta pagina -->
+<link rel="canonical" href="https://dougdimeiaraujo-maker.github.io/">
+
+<!-- Verificacao Search Console -->
+<meta name="google-site-verification" content="H8cRwHw4Z9e_Oog4mbc_8QbN7qFNiRw57Ffu38QEwR4">
+<meta name="google-site-verification" content="ykJmxxnP4eYMFRZ1sEFONOjgFGeyBMsLgP5CvbdZlZQ">
+
+<!-- Open Graph — URLs ABSOLUTAS, senao o WhatsApp nao mostra imagem -->
 <meta property="og:type" content="website">
 <meta property="og:locale" content="pt_BR">
 <meta property="og:site_name" content="BORUS IA">
-<meta property="og:image" content="og.jpg">
-<meta property="og:title" content="BORUS IA — Construímos experiências digitais inteligentes">
-<meta property="og:description" content="Websites premium desenvolvidos com Inteligência Artificial para empresas que querem crescer, vender mais e transmitir autoridade.">
+<meta property="og:url" content="https://dougdimeiaraujo-maker.github.io/">
+<meta property="og:title" content="Criação de Sites com IA em Bady Bassitt e Rio Preto | BORUS IA">
+<meta property="og:description" content="Sites premium com Inteligência Artificial para empresas de Bady Bassitt, Rio Preto, Mirassol e região. Rápidos, otimizados e feitos para gerar clientes.">
+<meta property="og:image" content="https://dougdimeiaraujo-maker.github.io/og.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="BORUS IA — Criação de sites com Inteligência Artificial">
+
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:image" content="og.jpg">
-<meta name="twitter:title" content="BORUS IA — Experiências digitais inteligentes">
-<meta name="twitter:description" content="Websites premium desenvolvidos com Inteligência Artificial.">
-<link rel="icon" type="image/png" href="data:image/png;base64,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">
+<meta name="twitter:title" content="Criação de Sites com IA em Bady Bassitt e Rio Preto | BORUS IA">
+<meta name="twitter:description" content="Sites premium com Inteligência Artificial para empresas da região de Rio Preto.">
+<meta name="twitter:image" content="https://dougdimeiaraujo-maker.github.io/og.jpg">
+
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;500;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+<link rel="icon" type="image/png" href="data:image/png;base64,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">
+
 <script type="application/ld+json">
 {
-  "@context":"https://schema.org",
-  "@graph":[
+  "@context": "https://schema.org",
+  "@graph": [
     {
-      "@type":"Organization",
-      "@id":"#org",
-      "name":"BORUS IA",
-      "description":"Desenvolvimento de websites de alto padrão e soluções com Inteligência Artificial.",
-      "telephone":"+5517996723294",
-      "sameAs":["https://www.instagram.com/matheusdimeiaraujo"],
-      "contactPoint":{"@type":"ContactPoint","telephone":"+5517996723294","contactType":"sales","areaServed":"BR","availableLanguage":"Portuguese"}
+      "@type": "Organization",
+      "@id": "https://dougdimeiaraujo-maker.github.io/#org",
+      "name": "BORUS IA",
+      "url": "https://dougdimeiaraujo-maker.github.io/",
+      "logo": "https://dougdimeiaraujo-maker.github.io/og.jpg",
+      "image": "https://dougdimeiaraujo-maker.github.io/og.jpg",
+      "description": "Desenvolvimento de websites de alto padrão e soluções com Inteligência Artificial.",
+      "telephone": "+5517996723294",
+      "sameAs": ["https://www.instagram.com/matheusdimeiaraujo"],
+      "contactPoint": {
+        "@type": "ContactPoint",
+        "telephone": "+5517996723294",
+        "contactType": "sales",
+        "areaServed": "BR",
+        "availableLanguage": "Portuguese"
+      }
     },
     {
-      "@type":"LocalBusiness",
-      "@id":"#local",
-      "name":"BORUS IA",
-      "telephone":"+5517996723294",
-      "priceRange":"$$",
-      "address":{"@type":"PostalAddress","addressLocality":"Bady Bassitt","addressRegion":"SP","addressCountry":"BR"},
-      "areaServed":["Bady Bassitt","São José do Rio Preto","Brasil"]
+      "@type": "ProfessionalService",
+      "@id": "https://dougdimeiaraujo-maker.github.io/#local",
+      "name": "BORUS IA",
+      "url": "https://dougdimeiaraujo-maker.github.io/",
+      "image": "https://dougdimeiaraujo-maker.github.io/og.jpg",
+      "telephone": "+5517996723294",
+      "priceRange": "$$",
+      "parentOrganization": { "@id": "https://dougdimeiaraujo-maker.github.io/#org" },
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Bady Bassitt",
+        "addressRegion": "SP",
+        "postalCode": "15115-000",
+        "addressCountry": "BR"
+      },
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": -20.9186,
+        "longitude": -49.4453
+      },
+      "areaServed": [
+        { "@type": "City", "name": "Bady Bassitt" },
+        { "@type": "City", "name": "São José do Rio Preto" },
+        { "@type": "City", "name": "Mirassol" },
+        { "@type": "City", "name": "Cedral" },
+        { "@type": "City", "name": "José Bonifácio" }
+      ],
+      "openingHoursSpecification": [{
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday"],
+        "opens": "08:00",
+        "closes": "20:00"
+      }]
     },
     {
-      "@type":"Service",
-      "name":"Criação de Websites com Inteligência Artificial",
-      "provider":{"@id":"#org"},
-      "serviceType":"Desenvolvimento web, automação e IA",
-      "areaServed":"BR"
+      "@type": "Service",
+      "name": "Criação de Websites com Inteligência Artificial",
+      "provider": { "@id": "https://dougdimeiaraujo-maker.github.io/#org" },
+      "serviceType": "Desenvolvimento web, automação e IA",
+      "areaServed": { "@type": "AdministrativeArea", "name": "Região de São José do Rio Preto" }
     },
     {
-      "@type":"BreadcrumbList",
-      "itemListElement":[
-        {"@type":"ListItem","position":1,"name":"Início","item":"./"},
-        {"@type":"ListItem","position":2,"name":"Serviços","item":"#servicos"},
-        {"@type":"ListItem","position":3,"name":"Projetos","item":"#projetos"}
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        { "@type": "ListItem", "position": 1, "name": "Início",   "item": "https://dougdimeiaraujo-maker.github.io/" },
+        { "@type": "ListItem", "position": 2, "name": "Serviços", "item": "https://dougdimeiaraujo-maker.github.io/#servicos" },
+        { "@type": "ListItem", "position": 3, "name": "Projetos", "item": "https://dougdimeiaraujo-maker.github.io/#projetos" }
       ]
     }
   ]
 }
 </script>
-<style>
-/* ===================== TOKENS ===================== */
-:root{
-  --bg:#090909;
-  --bg-2:#0c0c0b;
-  --surface:#121110;
-  --surface-2:#181614;
-  --line:rgba(240,236,230,.09);
-  --line-2:rgba(240,236,230,.15);
-  --txt:#f2f1ef;
-  --muted:#918d87;
-  --muted-2:#66625d;
-  --amber:#e08a2e;
-  --amber-soft:#f0bf72;
-  --terra:#a85a2c;
-  --silver:#c9ccd1;
-  --ease:cubic-bezier(.22,1,.36,1);
-  --r:20px;
-  --nav-h:76px;
-  --disp:'Sora',-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;
-  --sans:'Inter',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
-}
-*{margin:0;padding:0;box-sizing:border-box}
-html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
-@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
-body{
-  background:var(--bg);color:var(--txt);
-  font-family:var(--sans);font-size:16px;line-height:1.65;font-weight:300;
-  overflow-x:hidden;-webkit-font-smoothing:antialiased;
-}
-img,svg,canvas{display:block;max-width:100%}
-a{color:inherit;text-decoration:none}
-button{font:inherit;color:inherit;background:none;border:none;cursor:pointer}
-a,button{touch-action:manipulation;-webkit-tap-highlight-color:transparent}
-::selection{background:rgba(216,130,60,.32)}
-:focus-visible{outline:2px solid var(--amber);outline-offset:3px;border-radius:8px}
-
-.wrap{width:min(1180px,91%);margin-inline:auto}
-section{position:relative;padding:clamp(84px,11vh,140px) 0;scroll-margin-top:var(--nav-h);z-index:1}
-.eyebrow{
-  display:inline-flex;align-items:center;gap:10px;
-  font-family:var(--disp);font-size:11px;font-weight:500;letter-spacing:.28em;text-transform:uppercase;
-  color:var(--amber);margin-bottom:20px;
-}
-.eyebrow::before{content:"";width:26px;height:1px;background:linear-gradient(90deg,var(--terra),var(--amber))}
-h1,h2,h3{font-family:var(--disp);font-weight:600;line-height:1.12;letter-spacing:-.025em;text-wrap:balance}
-h2{font-size:clamp(1.9rem,4.3vw,3.05rem);margin-bottom:18px}
-.lead{color:var(--muted);font-size:clamp(1rem,1.35vw,1.1rem);max-width:600px}
-
-/* reveal: fade + scale + blur */
-.rv{opacity:0;transform:translateY(28px) scale(.985);filter:blur(6px);
-  transition:opacity .8s var(--ease),transform .8s var(--ease),filter .8s var(--ease)}
-.rv.in{opacity:1;transform:none;filter:none}
-@media (prefers-reduced-motion:reduce){.rv{transform:none;filter:none;transition:opacity .3s ease}}
-
-/* ===================== FUNDO NEURAL ===================== */
-#neural{position:fixed;inset:0;width:100%;height:100%;z-index:0;pointer-events:none;opacity:.85}
-.veil{position:fixed;inset:0;z-index:0;pointer-events:none;
-  background:radial-gradient(1100px 600px at 78% 8%,rgba(216,130,60,.07),transparent 60%),
-             radial-gradient(800px 500px at 12% 82%,rgba(168,83,56,.06),transparent 62%)}
-
-/* ===================== PROGRESSO ===================== */
-.progress{position:fixed;top:0;left:0;height:2px;width:0;z-index:130;
-  background:linear-gradient(90deg,var(--terra),var(--amber),var(--amber-soft));
-  box-shadow:0 0 12px rgba(216,130,60,.5)}
-
-/* ===================== NAV ===================== */
-.nav{position:fixed;inset:0 0 auto 0;z-index:120;height:var(--nav-h);display:flex;align-items:center;
-  border-bottom:1px solid transparent;transition:background .35s ease,border-color .35s ease}
-.nav.scrolled{background:rgba(9,9,9,.72);
-  -webkit-backdrop-filter:saturate(150%) blur(18px);backdrop-filter:saturate(150%) blur(18px);
-  border-bottom-color:var(--line)}
-.nav .wrap{display:flex;align-items:center;justify-content:space-between;gap:24px}
-.logo{display:flex;align-items:center;gap:12px;font-family:var(--disp);font-size:1.06rem;font-weight:700;letter-spacing:.12em}
-.logo .mark{width:34px;height:34px;flex-shrink:0}
-.logo small{display:block;font-family:var(--sans);font-size:.55rem;letter-spacing:.34em;text-transform:uppercase;color:var(--muted-2);font-weight:500;line-height:1.5}
-.nav-links{display:flex;gap:30px;list-style:none}
-.nav-links a{font-size:.87rem;color:var(--muted);transition:color .2s ease;padding:10px 0;font-weight:400}
-.nav-links a:hover{color:var(--txt)}
-.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;
-  padding:15px 28px;border-radius:999px;font-family:var(--disp);font-weight:500;font-size:.92rem;min-height:50px;
-  transition:transform .16s var(--ease),box-shadow .3s ease,background .25s ease,border-color .25s ease,color .25s ease}
-.btn:active{transform:scale(.96)}
-.btn-amber{background:linear-gradient(135deg,var(--amber-soft),var(--amber) 55%,var(--terra));color:#140d07;
-  box-shadow:0 14px 34px -14px rgba(216,130,60,.6)}
-.btn-ghost{border:1px solid var(--line-2);color:var(--txt);background:rgba(255,255,255,.02)}
-@media (hover:hover) and (pointer:fine){
-  .btn-amber:hover{transform:translateY(-2px);box-shadow:0 18px 44px -12px rgba(216,130,60,.7)}
-  .btn-ghost:hover{border-color:rgba(240,236,230,.34);background:rgba(255,255,255,.05)}
-}
-.nav .btn{padding:12px 22px;min-height:44px;font-size:.85rem}
-.burger{display:none;flex-direction:column;gap:5px;padding:12px}
-.burger span{width:22px;height:2px;background:var(--txt);border-radius:2px;transition:transform .28s var(--ease),opacity .2s ease}
-.mobile-menu{position:fixed;inset:0;z-index:119;background:rgba(9,9,9,.97);
-  -webkit-backdrop-filter:blur(20px);backdrop-filter:blur(20px);
-  display:flex;flex-direction:column;align-items:center;justify-content:center;gap:4px;
-  opacity:0;pointer-events:none;transition:opacity .3s ease}
-.mobile-menu.open{opacity:1;pointer-events:auto}
-.mobile-menu a{font-family:var(--disp);font-size:1.45rem;font-weight:500;padding:13px 26px;color:var(--muted)}
-.mobile-menu a:hover{color:var(--txt)}
-@media (max-width:940px){
-  .nav-links,.nav .btn{display:none}
-  .burger{display:flex}
-  body.menu-open .burger span:nth-child(1){transform:translateY(7px) rotate(45deg)}
-  body.menu-open .burger span:nth-child(2){opacity:0}
-  body.menu-open .burger span:nth-child(3){transform:translateY(-7px) rotate(-45deg)}
-}
-
-/* ===================== HERO ===================== */
-.hero{min-height:100vh;min-height:100svh;display:flex;align-items:center;
-  padding:calc(var(--nav-h) + 40px) 0 70px;overflow:hidden}
-.hero .wrap{display:grid;grid-template-columns:1.05fr .95fr;gap:clamp(30px,5vw,66px);align-items:center}
-.hero-badge{display:inline-flex;align-items:center;gap:9px;padding:8px 17px;border-radius:999px;
-  font-size:.78rem;color:var(--muted);background:rgba(255,255,255,.03);border:1px solid var(--line-2);
-  -webkit-backdrop-filter:blur(10px);backdrop-filter:blur(10px);margin-bottom:26px}
-.hero-badge b{color:var(--amber-soft);font-weight:500}
-.dot{width:7px;height:7px;border-radius:50%;background:var(--amber);box-shadow:0 0 0 0 rgba(216,130,60,.55);animation:pulse 2.4s infinite}
-@keyframes pulse{70%{box-shadow:0 0 0 9px rgba(216,130,60,0)}100%{box-shadow:0 0 0 0 rgba(216,130,60,0)}}
-.hero h1{font-size:clamp(2.2rem,5.4vw,4rem);margin-bottom:22px}
-.hero h1 em{font-style:normal;background:linear-gradient(102deg,#fff 22%,var(--silver) 45%,var(--amber-soft) 78%,var(--amber));
-  -webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent}
-.hero-sub{color:var(--muted);font-size:clamp(1rem,1.45vw,1.14rem);max-width:520px;margin-bottom:36px}
-.hero-actions{display:flex;gap:13px;flex-wrap:wrap}
-.hero-metrics{display:flex;gap:30px;margin-top:44px;flex-wrap:wrap}
-.hero-metrics b{display:block;font-family:var(--disp);font-size:1.35rem;font-weight:600;color:var(--txt);letter-spacing:-.02em}
-.hero-metrics span{font-size:.72rem;color:var(--muted-2);letter-spacing:.14em;text-transform:uppercase}
-/* palco do símbolo 3D */
-.mark-stage{position:relative;aspect-ratio:1;max-width:520px;margin-inline:auto;width:100%}
-#ring{width:100%;height:100%}
-.stage-glow{position:absolute;inset:8%;border-radius:50%;pointer-events:none;
-  background:radial-gradient(circle,rgba(216,130,60,.14),transparent 62%);filter:blur(28px)}
-.float{animation:floaty 9s ease-in-out infinite}
-@keyframes floaty{50%{transform:translateY(-14px)}}
-@media (prefers-reduced-motion:reduce){.float{animation:none}}
-@media (max-width:940px){
-  .hero .wrap{grid-template-columns:1fr}
-  .mark-stage{max-width:340px;order:-1}
-  .hero-metrics{gap:22px}
-}
-
-/* ===================== SERVIÇOS ===================== */
-.svc-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(250px,1fr));gap:16px;margin-top:52px}
-.svc{position:relative;overflow:hidden;padding:28px 25px;border-radius:var(--r);
-  background:linear-gradient(168deg,var(--surface-2),var(--surface));border:1px solid var(--line);
-  transition:transform .3s var(--ease),border-color .3s ease}
-.svc::before{content:"";position:absolute;inset:0;pointer-events:none;opacity:0;transition:opacity .35s ease;
-  background:radial-gradient(260px circle at var(--mx,50%) var(--my,40%),rgba(216,130,60,.13),transparent 66%)}
-.svc .ico{width:46px;height:46px;border-radius:13px;margin-bottom:18px;display:flex;align-items:center;justify-content:center;
-  background:linear-gradient(150deg,rgba(216,130,60,.16),rgba(168,83,56,.08));border:1px solid rgba(216,130,60,.24);
-  transition:transform .35s var(--ease)}
-.svc .ico svg{width:21px;height:21px;stroke:var(--amber-soft);stroke-width:1.6;fill:none;stroke-linecap:round;stroke-linejoin:round}
-.svc h3{font-size:1rem;font-weight:500;margin-bottom:7px;letter-spacing:-.01em}
-.svc p{font-size:.85rem;color:var(--muted);line-height:1.6}
-@media (hover:hover) and (pointer:fine){
-  .svc:hover{transform:translateY(-6px);border-color:rgba(216,130,60,.35)}
-  .svc:hover::before{opacity:1}
-  .svc:hover .ico{transform:rotate(-6deg) scale(1.07)}
-}
-
-/* ===================== PROCESSO ===================== */
-.process{background:var(--bg-2);border-block:1px solid var(--line)}
-.steps{position:relative;display:grid;grid-template-columns:repeat(6,1fr);gap:14px;margin-top:64px}
-.steps::before{content:"";position:absolute;top:23px;left:6%;right:6%;height:1px;background:var(--line-2)}
-.steps .track{position:absolute;top:23px;left:6%;height:1px;width:0;
-  background:linear-gradient(90deg,var(--terra),var(--amber),var(--amber-soft));
-  box-shadow:0 0 12px rgba(216,130,60,.55);transition:width 1.7s var(--ease)}
-.steps.in .track{width:88%}
-.step{text-align:center}
-.step i{position:relative;z-index:1;width:46px;height:46px;margin:0 auto 16px;border-radius:14px;
-  display:flex;align-items:center;justify-content:center;font-style:normal;
-  font-family:var(--disp);font-weight:600;font-size:.88rem;
-  background:var(--surface);border:1px solid var(--line-2);color:var(--muted);
-  transition:background .4s ease,color .4s ease,border-color .4s ease,box-shadow .4s ease}
-.step.in i{background:linear-gradient(150deg,rgba(216,130,60,.2),rgba(168,83,56,.1));
-  border-color:var(--amber);color:var(--txt);box-shadow:0 0 20px rgba(216,130,60,.3)}
-.step h3{font-size:.92rem;font-weight:500;margin-bottom:5px;letter-spacing:-.01em}
-.step p{font-size:.76rem;color:var(--muted-2);max-width:190px;margin-inline:auto}
-@media (max-width:940px){
-  .steps{grid-template-columns:1fr;gap:0;max-width:420px}
-  .steps::before,.steps .track{left:23px;right:auto;top:8px;bottom:8px;width:1px;height:auto}
-  .steps .track{height:0;width:1px;background:linear-gradient(var(--terra),var(--amber))}
-  .steps.in .track{height:95%;width:1px}
-  .step{display:flex;text-align:left;gap:20px;padding-bottom:28px}
-  .step i{margin:0;flex-shrink:0}
-  .step p{margin:0;max-width:none}
-}
-
-/* ===================== DIFERENCIAIS ===================== */
-.diff-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:14px;margin-top:52px}
-.diff{padding:24px 22px;border-radius:var(--r);
-  background:rgba(255,255,255,.028);border:1px solid var(--line);
-  -webkit-backdrop-filter:blur(10px);backdrop-filter:blur(10px);
-  transition:transform .28s var(--ease),border-color .28s ease}
-.diff svg{width:22px;height:22px;stroke:var(--amber-soft);stroke-width:1.7;fill:none;stroke-linecap:round;stroke-linejoin:round;margin-bottom:14px}
-.diff h3{font-size:.92rem;font-weight:500;margin-bottom:5px;letter-spacing:-.01em}
-.diff p{font-size:.79rem;color:var(--muted);line-height:1.55}
-@media (hover:hover) and (pointer:fine){.diff:hover{transform:translateY(-4px);border-color:rgba(216,130,60,.32)}}
-@media (max-width:960px){.diff-grid{grid-template-columns:1fr 1fr}}
-@media (max-width:540px){.diff-grid{grid-template-columns:1fr}}
-
-/* ===================== PROJETOS ===================== */
-.projects{background:var(--bg-2);border-block:1px solid var(--line)}
-.pj-grid{display:grid;grid-template-columns:1fr 1fr;gap:18px;margin-top:52px}
-.pj{position:relative;display:block;overflow:hidden;border-radius:24px;border:1px solid var(--line);
-  background:linear-gradient(168deg,var(--surface-2),var(--surface));padding:30px 30px 0;
-  transition:transform .32s var(--ease),border-color .32s ease,box-shadow .35s ease}
-.pj::after{content:"";position:absolute;inset:0;pointer-events:none;opacity:0;transition:opacity .35s ease;
-  background:radial-gradient(400px circle at var(--mx,50%) 18%,rgba(216,130,60,.1),transparent 62%)}
-.pj-head{display:flex;align-items:flex-start;justify-content:space-between;gap:14px}
-.pj-cat{font-family:var(--disp);font-size:.66rem;letter-spacing:.24em;text-transform:uppercase;color:var(--amber);font-weight:500}
-.pj h3{font-size:1.35rem;margin:7px 0 5px;letter-spacing:-.02em}
-.pj p{font-size:.85rem;color:var(--muted)}
-.pj-open{flex-shrink:0;width:40px;height:40px;border-radius:50%;border:1px solid var(--line-2);
-  display:flex;align-items:center;justify-content:center;transition:background .25s ease,transform .3s var(--ease),border-color .25s ease}
-.pj-open svg{width:15px;height:15px;stroke:var(--txt);stroke-width:2;fill:none}
-.pj-tags{display:flex;flex-wrap:wrap;gap:7px;margin-top:16px}
-.pj-tags span{padding:6px 12px;border-radius:999px;font-size:.72rem;color:var(--muted);
-  border:1px solid var(--line);background:rgba(255,255,255,.025)}
-/* preview mockup */
-.pj-view{position:relative;margin-top:24px;height:170px;border-radius:14px 14px 0 0;overflow:hidden;
-  border:1px solid var(--line);border-bottom:none;background:var(--pv-bg,#101010);
-  transition:transform .5s var(--ease)}
-.pv-bar{height:26px;display:flex;align-items:center;gap:5px;padding:0 12px;border-bottom:1px solid rgba(255,255,255,.06)}
-.pv-bar i{width:5px;height:5px;border-radius:50%;background:rgba(255,255,255,.2)}
-.pv-bar .u{margin-left:auto;width:56px;height:7px;border-radius:99px;background:var(--pv-ac,#d8823c);opacity:.75}
-.pv-body{padding:18px 16px;display:flex;flex-direction:column;gap:9px;height:calc(100% - 26px);
-  background:var(--pv-hero,linear-gradient(140deg,rgba(216,130,60,.16),transparent 62%))}
-.pv-body b{width:64%;height:11px;border-radius:99px;background:rgba(255,255,255,.82)}
-.pv-body s{width:44%;height:7px;border-radius:99px;background:rgba(255,255,255,.28);text-decoration:none}
-.pv-body u{width:76px;height:15px;border-radius:99px;background:var(--pv-ac,#d8823c)}
-.pv-cards{display:flex;gap:8px;margin-top:auto}
-.pv-cards i{flex:1;height:40px;border-radius:8px;background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.07)}
-@media (hover:hover) and (pointer:fine){
-  .pj:hover{transform:translateY(-6px);border-color:rgba(216,130,60,.4);box-shadow:0 34px 70px -30px rgba(0,0,0,.85)}
-  .pj:hover::after{opacity:1}
-  .pj:hover .pj-open{background:var(--amber);border-color:var(--amber);transform:rotate(45deg)}
-  .pj:hover .pj-open svg{stroke:#140d07}
-  .pj:hover .pj-view{transform:translateY(-6px)}
-}
-.pj-note{margin-top:20px;font-size:.76rem;color:var(--muted-2);text-align:center}
-@media (max-width:880px){.pj-grid{grid-template-columns:1fr}.pj{padding:26px 24px 0}}
-
-/* ===================== CTA ===================== */
-.cta .panel{position:relative;overflow:hidden;text-align:center;padding:clamp(58px,9vw,104px) 26px;border-radius:30px;
-  background:radial-gradient(700px 320px at 50% 118%,rgba(216,130,60,.22),transparent 66%),
-             linear-gradient(160deg,#151312,#0b0b0a);
-  border:1px solid var(--line-2)}
-.cta h2{max-width:660px;margin:0 auto 16px}
-.cta p{color:var(--muted);max-width:470px;margin:0 auto 36px}
-.cta .btn{padding:19px 44px;font-size:1rem}
-.cta small{display:block;margin-top:20px;color:var(--muted-2);font-size:.79rem}
-
-/* ===================== FOOTER ===================== */
-footer{padding:68px 0 34px;border-top:1px solid var(--line);position:relative;z-index:1;background:var(--bg)}
-.foot-grid{display:grid;grid-template-columns:1.3fr .7fr .7fr .9fr;gap:36px;margin-bottom:42px}
-.foot-brand p{color:var(--muted);font-size:.86rem;margin-top:16px;max-width:290px}
-.foot-col h4{font-family:var(--disp);font-size:.7rem;letter-spacing:.24em;text-transform:uppercase;color:var(--muted-2);margin-bottom:16px;font-weight:500}
-.foot-col ul{list-style:none;display:flex;flex-direction:column;gap:10px}
-.foot-col a,.foot-col li{color:var(--muted);font-size:.87rem;transition:color .2s ease}
-.foot-col a:hover{color:var(--txt)}
-.social-row{display:flex;gap:10px;margin-top:20px}
-.social-btn{width:44px;height:44px;border-radius:50%;display:flex;align-items:center;justify-content:center;
-  border:1px solid var(--line-2);color:var(--muted);
-  transition:color .2s ease,border-color .2s ease,background .2s ease,transform .16s var(--ease)}
-.social-btn svg{width:19px;height:19px;stroke:currentColor;stroke-width:1.7;fill:none;stroke-linecap:round;stroke-linejoin:round}
-.social-btn:active{transform:scale(.92)}
-@media (hover:hover) and (pointer:fine){
-  .social-btn:hover{color:var(--amber-soft);border-color:var(--amber);background:rgba(216,130,60,.09);transform:translateY(-2px)}
-}
-.foot-bottom{padding-top:26px;border-top:1px solid var(--line);
-  display:flex;justify-content:space-between;align-items:center;gap:16px;flex-wrap:wrap;
-  color:var(--muted-2);font-size:.79rem}
-@media (max-width:900px){.foot-grid{grid-template-columns:1fr 1fr}}
-@media (max-width:540px){.foot-grid{grid-template-columns:1fr}}
-
-/* WhatsApp flutuante */
-.wa{position:fixed;right:20px;bottom:20px;z-index:118;width:58px;height:58px;border-radius:50%;
-  display:flex;align-items:center;justify-content:center;background:#25d366;
-  box-shadow:0 14px 34px -10px rgba(37,211,102,.55);transition:transform .2s var(--ease)}
-.wa svg{width:29px;height:29px;fill:#fff}
-.wa:active{transform:scale(.92)}
-@media (hover:hover) and (pointer:fine){.wa:hover{transform:scale(1.07)}}
-
-/* logo real da marca */
-.logo .mark{width:36px;height:36px;object-fit:contain}
-.wordmark{background:linear-gradient(180deg,#f4f4f2 12%,#a9adb3 92%);
-  -webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent}
-.wordmark small{-webkit-text-fill-color:var(--muted-2)}
-.foot-logo img{width:150px;height:auto}
-
-/* símbolo 3D do hero */
-.mark-stage{perspective:1100px}
-.mark-tilt{width:100%;height:100%;transform-style:preserve-3d;will-change:transform}
-.mark-float{width:100%;height:100%;animation:floaty 9s ease-in-out infinite}
-.mark-3d{width:100%;height:100%;object-fit:contain;
-  animation:spinRing 30s linear infinite;
-  filter:drop-shadow(0 0 34px rgba(224,138,46,.28)) drop-shadow(0 26px 50px rgba(0,0,0,.6))}
-@keyframes spinRing{to{transform:rotate(360deg)}}
-#orbit{position:absolute;inset:0;width:100%;height:100%;pointer-events:none}
-.stage-glow{animation:breathe 7s ease-in-out infinite}
-@keyframes breathe{50%{opacity:.62;transform:scale(1.07)}}
-@media (prefers-reduced-motion:reduce){
-  .mark-3d,.mark-float,.stage-glow{animation:none}
-}
-</style>
 </head>
 <body>
 
